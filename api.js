@@ -1,10 +1,10 @@
-// export const getBaseUSD = async () => {
-//   const baseUSD = await fetch('https://api.exchangeratesapi.io/latest?base=USD');
+export const getAllCurrencyRates = async () => {
+  const baseCurrencyRates = await fetch('https://api.exchangeratesapi.io/latest');
 
-//   const dataBaseUSD = await baseUSD.json();
+  const dataBaseCurrencyRates = await baseCurrencyRates.json();
 
-//   return dataBaseUSD;
-// };
+  return dataBaseCurrencyRates.rates;
+}
 
 export const getAllCurrency = async () => {
   const baseCurrency = await fetch('https://api.exchangeratesapi.io/latest');
@@ -13,3 +13,7 @@ export const getAllCurrency = async () => {
 
   return dataBaseCurrency;
 }
+
+// export const getSecondSelectValue = async () => {
+//   return await document.querySelector('.second-select').value;
+// }
