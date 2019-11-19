@@ -1,0 +1,221 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@-webkit-keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+@keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+#main-react-exchange-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 16px 44px 16px;
+  border-radius: 8px;
+  border: 1px solid #dfe1e5;
+  position: relative;
+  background-color: #fff;
+  min-width: 720px;
+}
+
+#main-react-exchange-app .current .rate-1 {
+  font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #70757A;
+  margin-top: 10px;
+}
+
+#main-react-exchange-app .current .rate-2 {
+  margin-top: 4px;
+  font-size: 36px;
+  font-weight: normal;
+  font-family: arial,sans-serif;
+  color: #212121;
+}
+
+#main-react-exchange-app .current .date {
+  color: #70757A;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-family: arial,sans-serif;
+}
+
+#main-react-exchange-app .input-metods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+}
+
+#main-react-exchange-app .input-metods .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main-react-exchange-app .input-metods .inputs div {
+  position: relative;
+}
+
+#main-react-exchange-app .input-metods .inputs div .first-input,
+#main-react-exchange-app .input-metods .inputs div .second-input {
+  font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #70757A;
+  margin-top: 10px;
+  background: transparent;
+  border-radius: 6px;
+  border: 1px solid #DFE1E5;
+  height: 36px;
+  padding: 0 0 0 12px;
+  margin: 10px 10px 0 0px;
+}
+
+#main-react-exchange-app .input-metods .inputs div .copy-btn {
+  color: #70757A;
+  position: absolute;
+  right: 18px;
+  top: 20px;
+  display: inline-block;
+  fill: currentColor;
+  height: 21px;
+  line-height: 21px;
+  width: 21px;
+  cursor: pointer;
+}
+
+#main-react-exchange-app .input-metods .selects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main-react-exchange-app .input-metods .selects div {
+  position: relative;
+}
+
+#main-react-exchange-app .input-metods .selects div .first-select,
+#main-react-exchange-app .input-metods .selects div .second-select {
+  -webkit-appearance: button;
+  border: none;
+  font-size: 13px;
+  list-style: none;
+  outline: none;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 209px;
+  color: #202124;
+  height: 38px;
+  padding-left: 8px;
+  background-image: none;
+  border-radius: 6px;
+  border: 1px solid #DFE1E5;
+  margin-top: 10px;
+}
+
+#main-react-exchange-app .input-metods .selects div .arrow-down {
+  color: #70757A;
+  position: absolute;
+  right: 5px;
+  top: 18px;
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  line-height: 24px;
+  width: 24px;
+  pointer-events: none;
+}
+
+#main-react-exchange-app .provided {
+  text-decoration: none;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: block;
+  font-size: 12px;
+  color: #70757A;
+}
+
+@media (max-width: 750px) {
+  #main-react-exchange-app {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: auto;
+  }
+  #main-react-exchange-app .input-metods .inputs div .first-input,
+  #main-react-exchange-app .input-metods .inputs div .second-input {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #main-react-exchange-app .input-metods .inputs div .first-input,
+  #main-react-exchange-app .input-metods .inputs div .second-input,
+  #main-react-exchange-app .input-metods .selects div .first-select,
+  #main-react-exchange-app .input-metods .selects div .second-select {
+    width: 102px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
